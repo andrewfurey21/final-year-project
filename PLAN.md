@@ -30,24 +30,29 @@ Maybe compare difference implementations of a risc-v extension.
 [risc-v assembly manual](https://github.com/riscv-non-isa/riscv-asm-manual)
 [risc-v extensions](https://en.wikichip.org/wiki/risc-v/standard_extensions)
 [risc-v crypto](https://github.com/riscv/riscv-crypto) -> includes rtl experimental impl
+[announcing public review of crypto extension](https://riscv.org/blog/2021/09/risc-v-cryptography-extensions-task-group-announces-public-review-of-the-scalar-cryptography-extensions/)
+[yosys: open synthesis suite](https://yosyshq.net/yosys/)
+[more docs on yosys](https://yosyshq.readthedocs.io/projects/yosys/en/latest/index.html)
+[riscv-boom branch prediction circuit](https://docs.boom-core.org/en/latest/sections/branch-prediction/)
+[opensouce RISC-V cpu core implemented in Verilog from scratch in one night](https://github.com/darklife/darkriscv)
 
 ## look into
-* how do compilers work with extensions?
+* how do compilers work with riscv extensions? answer: compiler intrinsics
+* riscv assembler?
+* von neumann vs harvard?
+* how do fpgas work?
 
-## interesting extensions
-* Crypto
-* J (for jit languages)
-* Debug
+## compare
+* energy consumption
+* area on a die
+* speed
+* maybe number of LUT on FPGA?
 
-## interesting comp arch topics
+## interesting comparison topics
 * branch prediction
-* superscalar
+* instruction level parallelism
 * out of order execution
-* simd
-* register file
 * alu
 * fpu
 * cache stuff
-* memory stuff
-* os stuff
-* area, energy, speed
+* riscv crypto extension
