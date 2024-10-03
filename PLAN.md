@@ -1,6 +1,6 @@
-# RISC-V Processor Subsystem Analysis
+# Comparing Branch Prediction Circuits
 
-Maybe compare difference implementations of a risc-v extension.
+Implement a functioning RISC-V chip, with a bunch of different branch prediction circuitry, and compare and contrast.
 
 * Define goal
 * gather data
@@ -29,30 +29,33 @@ Maybe compare difference implementations of a risc-v extension.
 [risc-v software](https://github.com/riscv-software-src)
 [risc-v assembly manual](https://github.com/riscv-non-isa/riscv-asm-manual)
 [risc-v extensions](https://en.wikichip.org/wiki/risc-v/standard_extensions)
-[risc-v crypto](https://github.com/riscv/riscv-crypto) -> includes rtl experimental impl
 [announcing public review of crypto extension](https://riscv.org/blog/2021/09/risc-v-cryptography-extensions-task-group-announces-public-review-of-the-scalar-cryptography-extensions/)
 [yosys: open synthesis suite](https://yosyshq.net/yosys/)
 [more docs on yosys](https://yosyshq.readthedocs.io/projects/yosys/en/latest/index.html)
 [riscv-boom branch prediction circuit](https://docs.boom-core.org/en/latest/sections/branch-prediction/)
 [opensouce RISC-V cpu core implemented in Verilog from scratch in one night](https://github.com/darklife/darkriscv)
+[securing branch predictors with two level encryption](https://dl.acm.org/doi/10.1145/3404189)
+
+## TODO
+* get latex template
+* learn risc-v assembly
+* read papers on branch prediction
+* read up on branch prediction implementations
+* compile and run programs on milkv
+* gather risc-v implementations and play around with them, learn how they work (fazyrv, darkriscv etc)
+* implement risc-v chip
+* start implementing branch prediction circuits
 
 ## look into
 * how do compilers work with riscv extensions? answer: compiler intrinsics
 * riscv assembler?
 * von neumann vs harvard?
-* how do fpgas work?
+* how do fpgas work? what is look up table?
 
 ## compare
 * energy consumption
 * area on a die
 * speed
 * maybe number of LUT on FPGA?
-
-## interesting comparison topics
-* branch prediction
-* instruction level parallelism
-* out of order execution
-* alu
-* fpu
-* cache stuff
-* riscv crypto extension
+* security (from side channel attack for example)
+* branch prediction accuracy
