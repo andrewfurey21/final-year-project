@@ -35,6 +35,7 @@ Implement a functioning RISC-V chip, with a bunch of different branch prediction
 [riscv-boom branch prediction circuit](https://docs.boom-core.org/en/latest/sections/branch-prediction/)
 [opensouce RISC-V cpu core implemented in Verilog from scratch in one night](https://github.com/darklife/darkriscv)
 [securing branch predictors with two level encryption](https://dl.acm.org/doi/10.1145/3404189)
+[branch prediction](https://en.wikipedia.org/wiki/Branch_predictor)
 
 ## TODO
 * get latex template
