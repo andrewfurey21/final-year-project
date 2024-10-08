@@ -20,6 +20,9 @@ Implement a functioning RISC-V chip, with a bunch of different branch prediction
 4. References
 5. Appendices
 
+## Objectives
+## Plan
+
 ## Links of papers read
 [arrow](https://arxiv.org/pdf/2107.07169)
 [risc-v manual unprivileged](https://riscv.org/wp-content/uploads/2019/12/riscv-spec-20191213.pdf)
@@ -37,21 +40,39 @@ Implement a functioning RISC-V chip, with a bunch of different branch prediction
 [securing branch predictors with two level encryption](https://dl.acm.org/doi/10.1145/3404189)
 [branch prediction](https://en.wikipedia.org/wiki/Branch_predictor)
 
-## TODO
-* get latex template
-* learn risc-v assembly
-* read papers on branch prediction
-* read up on branch prediction implementations
-* compile and run programs on milkv
-* gather risc-v implementations and play around with them, learn how they work (fazyrv, darkriscv etc)
-* implement risc-v chip
-* start implementing branch prediction circuits
-
 ## look into
 * how do compilers work with riscv extensions? answer: compiler intrinsics
-* riscv assembler?
+* riscv assembler? answer: just use gnu as
 * von neumann vs harvard?
 * how do fpgas work? what is look up table?
+
+## on writing well
+### Write for your audience
+* who am i writing this for?
+* top 1-3 takeaways from this paper
+
+### Write simply
+* fewer than 30 words per sentence.
+* ordinary words and simple sentences
+* remove fluff: if you can remove something without losing meaning, do it.
+* avoid jargon, if you can't explain it so that the audience knows what youre talking about.
+
+### Remove weasel words
+* replace adjective with data
+
+### Apply the so what test
+* every sentence, ask so what.
+
+### Add a structure
+* situation: context
+* complication: why it matters
+* resolution: action
+
+### Be pursuasive
+* use active voice: the data center efficiency improved vs the the data center efficiency was improved
+
+### Non obsolete writing
+* avoid using references that change with time/location
 
 ## compare
 * energy consumption
@@ -60,3 +81,5 @@ Implement a functioning RISC-V chip, with a bunch of different branch prediction
 * maybe number of LUT on FPGA?
 * security (from side channel attack for example)
 * branch prediction accuracy
+* compare to different pipeline lengths
+* loops vs switch/ifs vs function calls
