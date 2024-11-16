@@ -1,0 +1,5 @@
+Directory structure:
+
+boards (fpga)
+rtl (verilog)
+src (source code to run)
